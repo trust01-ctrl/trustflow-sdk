@@ -2,6 +2,9 @@
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import globals from 'globals';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default [
   eslint.configs.recommended,
